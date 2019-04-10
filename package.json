@@ -1,0 +1,14 @@
+{
+  "name": "tsc-globalthis-err",
+  "version": "0.0.1",
+  "license": "MIT",
+  "scripts": {
+    "test": "tsc --target es5 --skipLibCheck --allowJs bundle.js --out out.js",
+    "test-simple": "tsc --target es5 --skipLibCheck --allowJs simple.js --out out.js"
+  },
+  "// 1": "dependencies are used locally and by bazel",
+  "dependencies": {
+    "@types/node": "^11.13.2",
+    "typescript": "~3.4.2"
+  }
+}
